@@ -1,17 +1,17 @@
 {{- define "asset_head" -}}
-    {{- $.Scratch.Set "style_asset" (dict "src" "css/head/blognavs.scss" "dest" "css/head/blog-list.scss") -}}
+    {{- $.Scratch.Set "style_asset" (dict "src" "css/head/term.scss" "dest" "css/head/term.scss") -}}
 {{- end -}}
 
-{{ define "main" }}
+{{- define "main" -}}
 
 	<div class="overlay">
 		<div class="content blognavs">
 			<div class="header">
-				<h1 class="heading">Categories : {{ .Title }} </h1>
+				<h1 class="heading">Tutorial Category | {{ .Title }} </h1>
 			</div>
 			<div class="lister">
 				<div class="divs"></div>
-				{{- partial "inline/blog/term_list.html" . -}}
+				{{- partial "inline/term/term_list.html" . -}}
 			</div>
 		</div>
 		<asside class="sidebar">
@@ -19,11 +19,10 @@
 		</asside>
 	</div>
 
-{{ end }}
+{{- end -}}
 
 
-
-{{- define "_partials/inline/blog/term_list.html" }}
+{{- define "_partials/inline/term/term_list.html" -}}
 	
 	{{- range .Pages -}}
 	<article data-url="{{ .Permalink }}">
