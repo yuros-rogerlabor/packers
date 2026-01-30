@@ -2,20 +2,20 @@
 .maintainers-section .people-list {
     display: flex;
     flex-direction: column;
-    gap: clamp(12px, 1.5vw, 16px);
+    gap: clamp(0.75rem, 1.5vw, 1rem);
 }
 
 .maintainers-section .person-item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px;
-    padding: clamp(8px, 1vw, 10px) 0;
+    gap: 0.75rem;
+    padding: clamp(0.5rem, 1vw, 0.625rem) 0;
 }
 
 .maintainers-section .person-avatar {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #2D3444;
@@ -29,7 +29,7 @@
 .maintainers-section .person-info {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0.125rem;
     flex: 1;
 }
 

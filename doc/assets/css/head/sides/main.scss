@@ -1,11 +1,11 @@
 /* ========== SIDEBAR ========== */
 .sidebar {
-    width: clamp(250px, 25vw, 300px);
+    width: clamp(15.625rem, 25vw, 18.75rem);
     flex-shrink: 0;
     order: 2;
     border-radius: 12px;
-    padding: clamp(16px, 2vw, 20px);
-    margin-bottom: clamp(16px, 2vw, 20px);
+    padding: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: clamp(1rem, 2vw, 1.25rem);
 }
 
 /* Optional: Add spacing between the number and the text */
@@ -19,9 +19,9 @@ h1:before, h2:before, h3:before, h4:before {
     gap: 15px;
     display: flex;
     align-items: center;
-    font-size: clamp(14px, 15vw, 1.15rem);
-    padding-bottom: 5px;
-    margin-bottom: clamp(12px, 1.5vw, 2.5rem);
+    font-size: clamp(14px, 15vw, 18.4px);
+    padding-bottom: 0.313rem;
+    margin-bottom: clamp(0.75rem, 1.5vw, 2.5rem);
     border-bottom: 1px solid #2D3444;
     color: #F8F8FF;
     font-weight: 600;
@@ -29,21 +29,21 @@ h1:before, h2:before, h3:before, h4:before {
 }
 
 .sidebar-title span{
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
 .sidebar-title::after {
     content: '';
     position: absolute;
-    left: 37px;
+    left: 2.313rem;
     top: 0;
-    width: 1px;
+    width: 0.063rem;
     height: 100%;
     background-color: #2D3444;
 }
 
 .sidebar-title svg {
-    width: 1.85;
+    width: 1.85rem;
     height: 1.85rem;
     color: #ff4500;
 }

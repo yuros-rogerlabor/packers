@@ -11,8 +11,8 @@
     }
 
     li {
-        margin: 10px 0;
-        font-size: clamp(14px, 1.3vw, .7rem);
+        margin: 0.625rem 0;
+        font-size: clamp(14px, 1.3vw, 16px);
     }
 
     .item {
@@ -24,9 +24,9 @@
     .parent {
         gap: 14px;
         display: flex;
-        padding: 8px 0;
+        padding: 0.5rem 0;
         align-items: center;
-        font-size: clamp(13px, 1.3vw, 1.06em);
+        font-size: clamp(13px, 1.3vw, 16px);
     }
 
     .parent svg {
@@ -45,15 +45,15 @@
     }
 
     .item.open .sublist {
-        max-height: 300px;
+        max-height: 18.75rem;
         opacity: 1;
-        margin-top: 3px;
+        margin-top: 0.188rem;
     }
 
     .sublist {
         max-height: 0;
         overflow: hidden;
-        padding-left: 26px;
+        padding-left: 1.625rem;
         opacity: 0;
         transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.3s ease;
         list-style: none;
@@ -64,17 +64,17 @@
     }
 
     .sublist li {
-        padding: 5px 0;
+        padding: 0.313rem 0;
         color: var(--white1-color);
         font-size: clamp(12px, 1.2vw, 13px);
         transition: color 0.25s ease, padding-left 0.25s ease;
         border-left: 2px solid transparent;
-        padding-left: 12px;
+        padding-left: 0.75rem;
     }
 
     .sublist li:hover {
         color: var(--orange-color);
         border-left-color: var(--orange-color);
-        padding-left: 16px;
+        padding-left: 1rem;
     }
 }

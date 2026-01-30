@@ -11,7 +11,7 @@
     }
 
     li {
-        margin: 10px 0;
+        margin: 0.625rem 0;
         font-size: clamp(13px, 1.3vw, 14px);
     }
 
@@ -22,9 +22,9 @@
     }
 
     .parent {
-        gap: 14px;
+        gap: 0.875rem;
         display: flex;
-        padding: 8px 0;
+        padding: 0.5rem 0;
         align-items: center;
         font-size: clamp(13px, 1.3vw, 16px);
     }
@@ -45,15 +45,15 @@
     }
 
     .item.open .sublist {
-        max-height: 300px;
+        max-height: 18.75rem;
         opacity: 1;
-        margin-top: 3px;
+        margin-top: 0.188rem;
     }
 
     .sublist {
         max-height: 0;
         overflow: hidden;
-        padding-left: 26px;
+        padding-left: 1.625rem;
         opacity: 0;
         transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.3s ease;
         list-style: none;
@@ -69,12 +69,12 @@
         font-size: clamp(12px, 1.2vw, 13px);
         transition: color 0.25s ease, padding-left 0.25s ease;
         border-left: 2px solid transparent;
-        padding-left: 12px;
+        padding-left: 0.75rem;
     }
 
     .sublist li:hover {
         color: var(--orange-color);
         border-left-color: var(--orange-color);
-        padding-left: 16px;
+        padding-left: 1rem;
     }
 }

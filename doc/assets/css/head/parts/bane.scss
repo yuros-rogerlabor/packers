@@ -8,7 +8,7 @@
 
 .banner {
     width: 100%;
-    height: clamp(250px, 35vw, 370px);
+    height: clamp(15.625rem, 35vw, 23.125rem);
     border-radius: 18px;
     overflow: hidden;
     background: #111;
@@ -35,27 +35,27 @@
     -webkit-backdrop-filter: blur(4px);
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-    padding: clamp(10px, 1.5vw, 14px) clamp(16px, 2vw, 24px);
+    padding: clamp(0.625rem, 1.5vw, 0.875rem) clamp(1rem, 2vw, 1.5rem);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: clamp(12px, 2vw, 22px);
+    gap: clamp(0.75rem, 2vw, 1.375rem);
 }
 
 .left-bar {
     display: flex;
     align-items: center;
-    gap: clamp(15px, 2vw, 25px);
+    gap: clamp(0.938rem, 2vw, 1.563rem);
     flex: 1;
-    min-width: 200px;
+    min-width: 12.5rem;
 }
 
 .right-bar {
     margin-left: auto;
     display: flex;
     align-items: center;
-    gap: clamp(20px, 3vw, 40px);
+    gap: clamp(1.25rem, 3vw, 2.5rem);
 }
 
 
@@ -64,7 +64,7 @@
     background: #c63d12;   
     color: #ffffff;        
     border: none;
-    padding: clamp(8px, 1vw, 10px) clamp(18px, 2vw, 26px);
+    padding: clamp(0.5rem, 1vw, 0.625rem) clamp(1.125rem, 2vw, 1.625rem);
     border-radius: 8px;
     font-size: clamp(13px, 1.2vw, 15px);
     font-weight: 600;
@@ -87,12 +87,12 @@
 .icons {
     display: flex;
     align-items: center;
-    gap: clamp(15px, 2.5vw, 30px);
+    gap: clamp(0.938rem, 2.5vw, 1.875rem);
 }
 
 .icon-btn svg {
-    width: clamp(22px, 2vw, 26px);
-    height: clamp(22px, 2vw, 26px);
+    width: clamp(1.375rem, 2vw, 1.375rem);
+    height: clamp(1.375rem, 2vw, 1.375rem);
     stroke: #F8F8FF;
     transition: stroke 0.25s ease;
 }
@@ -105,14 +105,14 @@
 /* ========== INFO ========== */
 .info {
     display: flex;
-    gap: clamp(30px, 5vw, 60px);
+    gap: clamp(1.875rem, 5vw, 3.75rem);
     align-items: center;
 }
 
 .info .label {
     font-size: clamp(11px, 1vw, 12px);
     opacity: 0.65;
-    margin-bottom: 2px;
+    margin-bottom: 0.125rem;
 }
 
 .info p {
@@ -124,12 +124,12 @@
 .author {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .avatar {
-    width: clamp(32px, 3vw, 36px);
-    height: clamp(32px, 3vw, 36px);
+    width: clamp(2rem, 3vw, 2.25rem);
+    height: clamp(2rem, 3vw, 2.25rem);
     border-radius: 10px;
 }
 
@@ -137,7 +137,7 @@
 
 
 /* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     .banner-wrapper {
         width: 95%;
@@ -151,12 +151,12 @@
     .info-bar {
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 0.938rem;
     }
 
 
     .info-bar {
-        padding: 12px 16px;
+        padding: 0.75rem 1rem;
     }
 
     .left-bar {
@@ -169,10 +169,10 @@
     }
 
     .footer-banner {
-         padding: 12px 16px;
+         padding: 0.75rem 1rem;
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 0.938rem;
     }
 
     .right-area {
@@ -189,27 +189,27 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
     
     .banner {
-        height: 200px;
+        height: 12.5rem;
     }
 
     .info {
         flex-direction: column;
-        gap: 15px;
+        gap: 0.938rem;
         align-items: flex-start;
     }
 
 
     .info {
         flex-direction: column;
-        gap: 15px;
+        gap: 0.938rem;
         align-items: flex-start;
     }
 
     .icons {
-        gap: 20px;
+        gap: 1.25rem;
     }
     
 }
