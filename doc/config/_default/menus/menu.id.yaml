@@ -15,7 +15,11 @@ main:
     pre: layout
     name: Documentation
     weight: 40
+  - url: /talks
+    pre: message-square
+    name: Forum
+    weight: 50
   - url: /info
     pre: info
     name: Info
-    weight: 50
+    weight: 60
