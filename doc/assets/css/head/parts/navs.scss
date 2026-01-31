@@ -106,14 +106,29 @@ header{
     }  
 }
 
-@media (max-width: 48rem) { 
 
+@media only screen and (min-width: 480px) {
     header{
         position: relative;
     }
 }
 
-@media (max-width: 30rem) { 
+
+@media only screen and (min-width: 768px) {
+    header{
+        position: relative;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    header{
+        position: relative;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
     header{
         position: relative;
     }

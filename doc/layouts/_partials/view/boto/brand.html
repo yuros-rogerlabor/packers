@@ -7,7 +7,7 @@
 {{- with .Site.Title -}}{{- $name = . -}}{{- end -}}
 
 
-<a id="brand" href="/" class="flex center-x">
+<a href="/" class="brand flex center-x">
     <img class="logo" src="{{ $logo.RelPermalink }}" width="39" height="39" alt="Organization Logo">
     {{- if eq .Site.Params.System.Name true -}}
         <h1 class="ml-10">{{ $name }}</h1>
