@@ -31,7 +31,7 @@
 
     <!-- pack style -->
     {{- $styles_pack := .Scratch.Get "style_pack" | default ( dict "src" "css/pack/home.scss" "dest" "assets/css/home.css" ) -}}
-    {{- $styles_pack := resources.Get $styles_pack.src | resources.ExecuteAsTemplate $styles_pack.dest . | toCSS | minify -}}
+    {{- $styles_pack := resources.Get $styles_pack.src | resources.ExecuteAsTemplate $styles_pack.dest . | toCSS | minify    -}}
     <link type="text/css" rel="stylesheet" href="{{ $styles_pack.RelPermalink }}" />
 
     {{- partial "view/pack/aset.html" . -}}
