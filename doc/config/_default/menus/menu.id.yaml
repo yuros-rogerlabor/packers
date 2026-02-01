@@ -15,7 +15,7 @@ main:
     pre: layout
     name: Documentation
     weight: 40
-  - url: /info
-    pre: info
-    name: Forum
+  - url: /pack
+    pre: package
+    name: Package
     weight: 50
