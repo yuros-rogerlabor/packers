@@ -1,0 +1,5 @@
+#!/bin/env bash
+
+source "$(pwd)/aux/pubs"
+source "$(pwd)/aux/data"
+source "$(pwd)/aux/wiki"

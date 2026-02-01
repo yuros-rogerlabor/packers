@@ -1,17 +1,16 @@
 #!/bin/bash
 
 
-source "aux/data"
-source "aux/wiki"
+source "aux/load"
+
 
 if [[ $1 == "-devel" ]];then
-    source aux/devs
+    kurosh_webdev
 fi
 
 if [[ $1 == "-build" ]];then
-    source aux/pubs
+    kurosh_webpub    
 fi
-
 
 if [[ $1 == "-apigen" ]];then
     packers_apigen

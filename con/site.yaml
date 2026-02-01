@@ -1,0 +1,9 @@
+title: karim
+baseURL: https://localhost/
+languageCode: en-US
+
+
+module:
+  hugoVersion:
+    extended: false
+    min: 0.146.0

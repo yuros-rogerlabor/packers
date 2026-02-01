@@ -1,4 +1,0 @@
-#!/bin/env bash
-
-cd doc &&
-hugo server -D
