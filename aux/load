@@ -1,5 +1,7 @@
 #!/bin/env bash
 
+kurosh_path=$(pwd)
+
 source "$(pwd)/aux/pubs"
 source "$(pwd)/aux/data"
 source "$(pwd)/aux/wiki"
