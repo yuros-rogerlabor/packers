@@ -1,9 +1,9 @@
 {{- $github_data_cont := "" -}}
 
 <!-- CONTRIBUTORS  -->
-<div class="maintainers-section">
-    <h4 class="sidebar-title">
-        {{- partial "icon" "users" -}} Maintainers
+<div class="maintainers-section sections">
+    <h4 class="subtitle ">
+        <span>{{- partial "icon" "users" -}}</span> Maintainers
     </h4>
      <div class="people-list">
         {{- with resources.Get "api/github/pkgs.json" -}}

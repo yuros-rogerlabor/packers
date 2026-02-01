@@ -1,10 +1,10 @@
 {{- $github_data_cont := "" -}}
 
 <!-- CONTRIBUTORS  -->
-<div class="maintainers-section">
-    <h4 class="sidebar-title">
-        {{- partial "icon" "users" -}} Developer
-    </h4>
+<section class="maintainers-section sections">
+    <h2 class="subtitle">
+        <span>{{- partial "icon" "users" -}}</span>Developer
+    </h2>
      <div class="people-list">
         {{- with resources.Get "api/github/cont.json" -}}
             {{- $github_data_cont = . | transform.Unmarshal -}}
@@ -19,4 +19,4 @@
             {{ end }}
         {{ end }}
     </div>
-</div>
+</section>

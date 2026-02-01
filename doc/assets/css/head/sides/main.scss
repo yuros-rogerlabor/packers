@@ -1,49 +1,40 @@
 /* ========== SIDEBAR ========== */
 .sidebar {
-    width: clamp(15.625rem, 25vw, 18.75rem);
-    flex-shrink: 0;
     order: 2;
-    border-radius: 12px;
-    padding: clamp(1rem, 2vw, 1.25rem);
-    margin-bottom: clamp(1rem, 2vw, 1.25rem);
-}
-
-/* Optional: Add spacing between the number and the text */
-h1:before, h2:before, h3:before, h4:before {
-  font-weight: bold;
-}
+    width: clamp(15.625rem, 25vw, 18.75rem);
 
 
-/* ========== SIDEBAR TITLE ========== */
-.sidebar-title {
-    gap: 15px;
-    display: flex;
-    align-items: center;
-    font-size: clamp(14px, 15vw, 16.4px);
-    padding-bottom: 0.313rem;
-    margin-bottom: clamp(0.75rem, 1.5vw, 2.5rem);
-    border-bottom: 1px solid #2D3444;
-    color: #F8F8FF;
-    font-weight: 600;
-    position: relative;
-}
+    .sections {
+        margin-bottom: clamp(1rem, 3.5vw, 4rem);
+    }
 
-.sidebar-title span{
-    padding-right: 1.25rem;
-}
 
-.sidebar-title::after {
-    content: '';
-    position: absolute;
-    left: 2.313rem;
-    top: 0;
-    width: 0.063rem;
-    height: 100%;
-    background-color: #2D3444;
-}
+    .subtitle {
+        gap: 15px;
+        display: flex;
+        font-weight: 600;
+        align-items: flex-start;
+        color: var(--white4-color);
+        font-size: clamp(14px, 15vw, .95rem);
+        margin-bottom: clamp(0.75rem, 1.1vw, 2rem);
+        border-bottom: 1px solid var(--greys6-color);
+        
+        
+        span{
+            border-right: 1px solid var(--greys6-color);
+            padding: 0rem .7rem .2rem 0rem ;
+        }
 
-.sidebar-title svg {
-    width: 1.85rem;
-    height: 1.85rem;
-    color: #ff4500;
+
+        svg {
+            width: 1.4rem;
+            height: 1.4rem;
+            color: var(--prime1-color);
+        }
+    }
+
+
+    .subsider {
+
+    }
 }

@@ -2,9 +2,9 @@
 
 {{- $github_data_rels := "" -}}
 
-<div class="package-section" data-show="0,3,4,5,6">
-    <h4 class="sidebar-title">
-        {{- partial "icon" "box" -}} Package
+<div class="package-section sections">
+    <h4 class="subtitle">
+        <span>{{- partial "icon" "box" -}}</span> Package
     </h4>
     <ul class="package-list">
         {{- with resources.Get "api/github/rels.json" -}}
