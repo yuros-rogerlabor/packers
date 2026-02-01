@@ -7,13 +7,12 @@
 {{- define "main" -}}
     
     <div class="overlay">
-        <article class="content wiki">
+        <article class="content">
             <h1 class="heading">{{ .Store.Get "github_repo_name" }} Wiki</h1>
-            <div class="pages"> {{ .Content }} </div>
+            <div class="pages wikis"> {{ .Content }} </div>
         </article>
         <asside class="sidebar">
             {{ partial "view/sides/tocspage.html" . }}
-            {{ partial "view/sides/appsvers.html" . }}
         </asside>
     </div>
 

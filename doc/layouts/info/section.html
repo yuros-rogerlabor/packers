@@ -12,6 +12,7 @@
 				<h1 class="heading">About {{ .Store.Get "github_repo_name" }}</h1>
 			</div>
 			<div class="pages"> {{ .Content }} </div>
+			{{- partial "view/chae/main.html" . -}}
 		</article>
 		<asside class="sidebar">
 			{{- partial "view/sides/appsvers.html" . -}}
