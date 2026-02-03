@@ -44,6 +44,8 @@ jobs:
       - name: Create executable files directory 
         run: |
           mkdir -p "${HOME}/.local"
+      - name: Install pandoc
+        uses: pandoc/actions/setup@v1
       - name: Install dart for sass support
         run: |
           curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
