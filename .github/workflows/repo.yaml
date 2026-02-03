@@ -77,13 +77,15 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
-      - name: Appending packer on envi
+      - name: Prepare packers brokers
         run: |
           cat conf/app.conf >> $GITHUB_ENV
+          mkdir "${HOME}/.local/pack"
+          curl -o ${HOME}/.local/pack/packers http://yuros.my.id/scritps/packers.sh
+          echo "${HOME}/.local/pack" >> "${GITHUB_PATH}"
       - name: Install packers brokers
         run: |
-          chmod +x builder/sites
-          ./builder/sites 
+          packers
         shell: bash
       - name: Site generation
         run: |
