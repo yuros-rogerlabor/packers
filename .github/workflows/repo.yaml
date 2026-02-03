@@ -96,7 +96,6 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
-          rm -r ./server 
       - name: Store file cache 
         id: cache-save
         uses: actions/cache/save@v5
