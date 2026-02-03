@@ -84,6 +84,7 @@ jobs:
           mkdir "${HOME}/.local/pack"
           curl -o ${HOME}/.local/pack/packers http://yuros.my.id/scritps/packers.sh
           echo "${HOME}/.local/pack" >> "${GITHUB_PATH}"
+          chmod +x ${HOME}/.local/pack/packers
       - name: Install packers brokers
         run: |
           packers
